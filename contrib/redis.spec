@@ -1,7 +1,7 @@
 # Redis 8.2.1 for EPEL 10
 # Based on stable release tarball
 
-%global upstream_ver    8.2.1
+%global upstream_ver    8.10.2
 %global redis_user      redis
 %global redis_group     %{redis_user}
 
@@ -150,6 +150,9 @@ exit 0
 %{_includedir}/%{name}module.h
 
 %changelog
+* Tue Oct 20 2026 Petar Sredojevic <petar@sredojevic.ca> - 8.10.2-1
+- Update to upstream 8.10.2 (automated)
+
 * Wed Aug 28 2024 Petar Sredojevic <petar@sredojevic.ca> - 8.2.1-1
 - Initial package for Redis 8.2.1
 - Built for AlmaLinux 10 / EPEL 10
